@@ -10,7 +10,7 @@ public class HlavniProgram {
         zofka = new Turtle();
 
 
-        //horni rada domu  -změna
+        //horni rada domu
         zofka.setLocation(100,250);
         nakresliDomecek(zofka);
         zofka.setLocation(200,250);
@@ -38,11 +38,14 @@ public class HlavniProgram {
         zofka.setLocation(500,500);
         nakresliA(zofka);
         //prasatko
-        zofka.setLocation(280,400);
+        zofka.setLocation(300,380);
         nakresliPrasatko(zofka);
         //slunce
         zofka.setLocation(100,100);
         nakresliSlunce(zofka);
+        zofka.penUp();
+        zofka.move(160);
+
     }
 
     private void nakresliL(Turtle zofka) {
@@ -81,11 +84,11 @@ public class HlavniProgram {
         zofka.turnLeft(180);
         zofka.move(40);
         zofka.turnLeft(135);
-        zofka.move(40.160);
+        zofka.move(40.469);
         zofka.turnLeft(180);
-        zofka.move(40.160);
+        zofka.move(40.469);
         zofka.turnLeft(90);
-        zofka.move(40.160);
+        zofka.move(40.469);
         zofka.turnLeft(45);
         zofka.penUp();
         zofka.move(30);
@@ -116,6 +119,7 @@ public class HlavniProgram {
             zofka.move(15);
             zofka.turnRight(80);
             zofka.penDown();
+
 
         }
     }
