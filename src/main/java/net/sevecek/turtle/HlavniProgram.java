@@ -10,38 +10,38 @@ public class HlavniProgram {
         zofka = new Turtle();
 
 
-        //horni rada domu
-        zofka.setLocation(100,300);
+        //horni rada domu  -změna
+        zofka.setLocation(100,250);
         nakresliDomecek(zofka);
-        zofka.setLocation(200,300);
+        zofka.setLocation(200,250);
         nakresliDomecek(zofka);
-        zofka.setLocation(300,300);
+        zofka.setLocation(300,250);
         nakresliDomecek(zofka);
-        zofka.setLocation(400,300);
+        zofka.setLocation(400,250);
         nakresliDomecek(zofka);
-        zofka.setLocation(500,300);
+        zofka.setLocation(500,250);
         nakresliDomecek(zofka);
         //spodni rada domu
-        zofka.setLocation(100,410);
+        zofka.setLocation(100,400);
         nakresliDomecek(zofka);
-        zofka.setLocation(500,410);
+        zofka.setLocation(500,400);
         nakresliDomecek(zofka);
         //pismenka
-        zofka.setLocation(100,520);
+        zofka.setLocation(100,500);
         nakresliL(zofka);
-        zofka.setLocation(200,520);
+        zofka.setLocation(200,500);
         nakresliI(zofka);
-        zofka.setLocation(300,520);
+        zofka.setLocation(300,500);
         nakresliD(zofka);
-        zofka.setLocation(400,520);
+        zofka.setLocation(400,500);
         nakresliK(zofka);
-        zofka.setLocation(500,520);
+        zofka.setLocation(500,500);
         nakresliA(zofka);
         //prasatko
         zofka.setLocation(280,400);
         nakresliPrasatko(zofka);
         //slunce
-        zofka.setLocation(80,80);
+        zofka.setLocation(100,100);
         nakresliSlunce(zofka);
     }
 
@@ -79,13 +79,13 @@ public class HlavniProgram {
     private void nakresliK(Turtle zofka) {
         zofka.move(60);
         zofka.turnLeft(180);
-        zofka.move(30);
+        zofka.move(40);
         zofka.turnLeft(135);
-        zofka.move(40.159);
+        zofka.move(40.160);
         zofka.turnLeft(180);
-        zofka.move(40.159);
+        zofka.move(40.160);
         zofka.turnLeft(90);
-        zofka.move(40.159);
+        zofka.move(40.160);
         zofka.turnLeft(45);
         zofka.penUp();
         zofka.move(30);
@@ -107,14 +107,14 @@ public class HlavniProgram {
         zofka.turnRight(90);
     }
     private void nakresliSlunce(Turtle zofka) {
-        for (int i = 0; i < 25; i++) {
-            zofka.move(12);
-            zofka.turnLeft(90);
-            zofka.move(20);
-            zofka.penUp();
-            zofka.turnLeft(180);
-            zofka.move(20);
-            zofka.turnLeft(75);
+        for (int i = 0; i < 12; i++) {
+            zofka.move(15);
+            zofka.turnLeft(30);
+            zofka.turnRight(100);
+            zofka.move(15);
+            zofka.turnRight(180);
+            zofka.move(15);
+            zofka.turnRight(80);
             zofka.penDown();
 
         }
